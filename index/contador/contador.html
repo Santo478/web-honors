@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="counter.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contador de palabras</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <h1>Contador de palabras</h1>
+    <div class="Contain1">
+      <div class="Contain2">
+        <h2>Inserte texto</h2>
+        <textarea
+          class="text"
+          id="inputText"
+          placeholder="Escribe tu texto aquí..."
+        ></textarea>
+      </div>
+
+      <div class="Contain3">
+        <ul>
+          <li><a href="../index.html" class="button">Volver</a></li>
+          <li>
+            <a onclick="contarPalabras()" class="button">Contar (no funca)</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p># de Palabras:</p>
+            <p id="cantidad"></p>
+          </li>
+          <li><p id="resultado"></p></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

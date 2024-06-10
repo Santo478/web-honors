@@ -1,0 +1,74 @@
+
+h1 { /* Titulos principales */
+  font-size: 30px;
+
+}
+
+h2 { /* Titulos secundarios*/
+  font-size: 26px;
+}
+
+.Contain1{
+  border-color: black;
+  border-style: dashed;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+ }
+
+ .Contain2{
+ text-align: left;
+ border-color: black;
+ border-style: dashed;
+ padding: 10px;
+}
+
+ .contain3{
+  text-align: left;
+  border-color: black;
+  border-style: dashed;
+  padding: 50px;
+ }
+
+ .text{
+  align-items: center;
+  height: 300px;
+  width: 500px;
+ }
+
+ .button {
+  font: times;
+  font-style: italic;
+  background-color: #0581d4; 
+  border:  none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  opacity: 80%;
+  }
+
+a.button:hover{
+  font: times;
+  font-style: italic;
+  background-color: #0331c7; 
+  border:  none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 21px;
+  opacity: 80%;
+
+}
+
+ul{ /* Sacarle los puntos del enlistado */
+  list-style-type: none;
+}
+
+li{ /* espacio entre botones*/
+  padding: 2px;
+}

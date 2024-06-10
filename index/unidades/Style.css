@@ -1,0 +1,15 @@
+
+h1 { /* Titulos principales */
+  font-size: 30px;
+
+}
+
+h2 { /* Titulos secundarios*/
+  font-size: 26px;
+}
+
+.Contain1 {
+  text-align: center;
+  border-color: black;
+  border-style: dashed;
+ }
