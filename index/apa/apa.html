@@ -3,9 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <title>Citador en apa</title>
+    <link rel="stylesheet" href="Style.css">
   </head>
   <body>
     <h1>Citador en apa</h1>
-    <a href="../index.html">Volver</a>
+      <div id="contenedor-apa">
+        <label for="pagina-a-citar">URL:</label>
+        <input type="text" id="pagina-a-citar">
+        <button id="citar-apa" class="button">Citar página</button>
+      </div>
+      <div id="resultados">
+        <h3>Entrada de lista bibliográfica:</h3>
+        <p id="apa-bibliografia"></p>
+        <h3>Entre paréntesis:</h3>
+        <p id="cita-parentesis"></p>
+      </div>
+    <div class="centrado">
+      <a href="../index.html" class="button">Volver</a>
+    </div>
   </body>
 </html>
