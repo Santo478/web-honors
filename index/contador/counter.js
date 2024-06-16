@@ -10,5 +10,5 @@ function contarPalabras() {
     });
     // Mostrar el número de palabras
     var resultado = document.getElementById('resultado');
-    resultado.innerHTML = palabras.length;
+    resultado.innerHTML = `Palabras: ${palabras.length}`;
 }

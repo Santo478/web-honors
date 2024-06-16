@@ -1,68 +1,108 @@
 
 h1 { /* Titulos principales */
   font-size: 30px;
-
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 h2 { /* Titulos secundarios*/
   font-size: 26px;
+  color: aliceblue;
+  font-style: bold;
+  font-stretch: expanded ;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Palabrador{
+  background-color: black;
 }
 
 .Contain1{
-  border-color: black;
-  border-style: dashed;
+  background-color: rgb(100, 147, 255);
   display: flex;
-  justify-content: flex-start;
   padding: 10px;
+  width: 98%;
+  opacity: 80%;
+  border-radius: 12px;
  }
 
  .Contain2{
- text-align: left;
- border-color: black;
- border-style: dashed;
+background-color: rgba(102, 237, 249, 0.703);
  padding: 10px;
+ width: 98%;
+ border-radius: 12px;
 }
 
- .contain3{
-  text-align: left;
-  border-color: black;
-  border-style: dashed;
-  padding: 50px;
+ .Contain3{
+  text-align: center;
+  width: 15%;
+  background-color: azure;
+  border-radius: 12px;
+}
+  .Contain4{
+    text-align: left;
+    margin-left: 5px;
+    width: 75%;
+    border-radius: 12px;
+  
  }
 
  .text{
+  font-size: 16px;
+  padding: 12px;
+  margin-left: 5px;
   align-items: center;
-  height: 300px;
-  width: 500px;
+  height: 100px;
+  width: 105%;
  }
 
  .button {
-  font: times;
-  font-style: italic;
-  background-color: #0581d4; 
-  border:  none;
-  color: rgb(0, 0, 0);
-  padding: 15px 32px;
+  background-color: #04AA6D;
+  color: white;
+  padding: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
-  opacity: 80%;
+  font-size: 16px;
+  margin: 4px 2px;
   }
 
+  .button1 {
+    background-color: #04AA6D;
+    border: 15px;
+
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    }
+
 a.button:hover{
-  font: times;
-  font-style: italic;
-  background-color: #0331c7; 
-  border:  none;
-  color: white;
-  padding: 15px 32px;
+  background-color: #01613e;
+  border: none;
+  color: rgba(255, 255, 255, 0.833);
+  padding: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 21px;
-  opacity: 80%;
-
+  font-size: 16px;
+  margin: 4px 2px;
+}
+  a.button1:hover{
+    margin-top: 20px;
+    background-color: #01613e;
+    border: none;
+    color: rgba(255, 255, 255, 0.833);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  
 }
 
 ul{ /* Sacarle los puntos del enlistado */
