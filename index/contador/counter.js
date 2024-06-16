@@ -3,7 +3,7 @@ function contarPalabras() {
     // Eliminar espacios en blanco al inicio y al final
     texto = texto.trim();
     // Contar palabras separadas por espacios
-    var palabras = texto.split(/\s+/);
+    var palabras = texto.split(/[\-+/*\t\s]+/);
     // Filtrar espacios vacíos
     palabras = palabras.filter(function(palabra) {
         return palabra.length > 0;
