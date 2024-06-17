@@ -1,13 +1,19 @@
 h1 { /* Titulos principales */
   font: 800 40px Arial ;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: aquamarine;
   -webkit-text-stroke: 1px;
+  color: rgb(15, 82, 71)
 
 }
 
 h2 { /* Titulos secundarios*/
   font-size: 26px;
 }
+
+body {
+  background-color: rgb(0, 6, 44);
+}
+
 
 ul{ /* Sacarle los puntos del enlistado */
   list-style-type: none;

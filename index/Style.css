@@ -1,6 +1,7 @@
 
 h1 { /* Titulos principales */
   font-size: 30px;
+  margin-right: 35%;
 
 }
 
@@ -9,7 +10,7 @@ h2 { /* Titulos secundarios*/
 }
 
 body {
-  background-color: rgb(0, 6, 44);
+  background-color:#04aa46ad;
 }
 
 
@@ -67,7 +68,7 @@ a.button:hover{
 }
 
 .Titulo {
-  width: 90%;
+  width: 85%;
   text-align: right;
   margin-right:30px;
   font: 800 60px Arial ;
@@ -80,7 +81,9 @@ a.button:hover{
 .dropdown {
   position: relative;
   margin-top: 13px;
-  width: 10%;
+  width: 15%;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .dropdown-content {
@@ -181,10 +184,58 @@ a.drop:hover{
 }
 
 .pie3 {
+  display: flex;
   left: 0;
   bottom: 0;
   width: 30%;
   background-color: rgba(0, 33, 200, 0.664);
   color: white;
   text-align: center;
+}
+
+.text{
+  font-size: 13px;
+  padding: 12px;
+  margin-left: 5px;
+  align-items: center;
+  height: 50%;
+  width: 80%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 3px;
+  resize: none;
+}
+
+.enviar{
+  background-color: #04AA6D;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 4px;
+  width: 15%;
+  border-radius: 5px; 
+  height: 25%; 
+  margin-top: 6%;
+  text-align:center;
+}
+
+a.enviar:hover{
+  background-color: #01613e;
+  border: none;
+  color: rgba(255, 255, 255, 0.833);
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 4px;
+  width: 15%;
+  width: 15%;
+  border-radius: 5px; 
+  height: 25%; 
+  margin-top: 6%;
+  text-align:center;
 }
