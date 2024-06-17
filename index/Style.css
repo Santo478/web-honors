@@ -1,8 +1,8 @@
-
 h1 { /* Titulos principales */
-  font-size: 30px;
-  margin-right: 35%;
-
+  font: 800 40px Arial ;
+  -webkit-text-fill-color: aquamarine;
+  -webkit-text-stroke: 1px;
+  color: rgb(15, 82, 71)
 }
 
 h2 { /* Titulos secundarios*/
@@ -13,6 +13,24 @@ body {
   background-color:#04aa46ad;
 }
 
+.poopoo{
+  background-color: rgb(0, 6, 44);
+}
+
+.peepee {
+  font: 800 40px Arial ;
+  -webkit-text-fill-color: aquamarine;
+  -webkit-text-stroke: 1px;
+  color: rgb(15, 82, 71)
+}
+
+.Contain0{
+  background-color: rgba(102, 237, 249, 0.703);
+   padding: 10px;
+   width: 98%;
+   border-radius: 12px;
+   text-align: center;
+  }
 
 
 ul{ /* Sacarle los puntos del enlistado */
@@ -43,6 +61,17 @@ li{ /* espacio entre botones*/
   border-radius: 8px;
   width: 20%;
   }
+
+  .button1 {
+    background-color: #04AA6D;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    }
 
 a.button:hover{
   background-color: #01613e;
@@ -185,12 +214,24 @@ a.drop:hover{
 
 .pie3 {
   display: flex;
+  justify-content: center;
+  align-items: center;
   left: 0;
   bottom: 0;
   width: 30%;
   background-color: rgba(0, 33, 200, 0.664);
   color: white;
   text-align: center;
+}
+
+.pie3 a {
+  color: inherit;
+  text-decoration: none;
+  
+}
+
+.pie3 a:hover {
+  text-decoration: underline;
 }
 
 .text{
