@@ -280,3 +280,41 @@ a.enviar:hover{
   margin-top: 6%;
   text-align:center;
 }
+
+.Contain3 {
+  text-align: center;
+}
+
+.form-multiple {
+  display: flex; 
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  margin: 10px;
+}
+
+.label-encima {
+  display: block;
+}
+
+textarea {
+  width: 80%;
+  height: 100px;
+  margin-top: 20px;
+  resize: none;
+  display: block;
+  margin: 0 auto; 
+
+#send {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
