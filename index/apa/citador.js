@@ -1,44 +1,36 @@
 function citarWeb(){
-    console.log('holi')
-    url = 'https://t0guvf0w17.execute-api.us-east-1.amazonaws.com/Prod/web'
-    aCitar = document.getElementById('pagina-a-citar')
-    fetch(url, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: {
-            "Accept": "*/*",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "es-GT,es-419;q=0.9,es;q=0.8,en;q=0.7",
-            "Content-Type": "text/plain",
-            "Origin": "https://zbib.org",
-            "Priority": "u=1, i",
-            "Sec-Ch-Ua": '"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"',
-            "Sec-Ch-Ua-Mobile": "?0",
-            "Sec-Ch-Ua-Platform": '"Windows"',
-            "Sec-Fetch-Dest": "empty",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Site": "cross-site",
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"        },
-        body: aCitar})
-        .then(response => {
-            if (!response.ok) {
-                return response.text().then(text => {
-                    throw new Error(`Network response was not ok: ${response.status} ${response.statusText}. Response body: ${text}`);
-                });
+    const url = 'http://127.0.0.1:8000/citar-apa/'
+    const aCitar = document.getElementById('pagina-a-citar').value
+    const linkCompleto = url + '?link=' + aCitar
+    fetch(linkCompleto)
+    .then(response => response.json())
+    .then(data => {
+        let informacion = JSON.parse(data)[0];
+        console.log(informacion);
+        let autores = '';
+        for (let i = 0; i < informacion.creators.length; i++) {
+            let autor = informacion.creators[i];
+            autores += autor.lastName + ', ' + autor.firstName.charAt(0) + '.';
+            if (i < informacion.creators.length - 1) {
+              autores += ', ';
             }
-            return response.json();
-        })
-        .then(data => {
-            console.log(data);
-        })
-        .catch(error => {
-            console.error('Fetch error:', error);
-        });
+          }
+        const anno = informacion.date ? '(' + informacion.date + ').' : '(s.f.).';
+        const titulo = informacion.title;
+        const url = informacion.url;
+        citaCompleta = autores + ' ' + anno + ' ' + titulo + ' ' + url
+        console.log(citaCompleta)
+        const listaCitas = document.getElementById('apa-bibliografia');
+        const nuevaCita = document.createElement("il");
+        const text = document.createTextNode(citaCompleta);
+        nuevaCita.appendChild(text);
+        listaCitas.appendChild(nuevaCita);
+
+    })
 }
 
 function prueba(){
-    const xdd = document.getElementById('pagina-a-citar').value
-    console.log(typeof xdd)
+    console.log('hola')
 }
 
 document.addEventListener("DOMContentLoaded", function () {

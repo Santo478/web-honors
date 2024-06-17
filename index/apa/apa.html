@@ -1,34 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script src="citador.js"></script>
   <head>
     <meta charset="UTF-8" />
     <title>Citador en apa</title>
-    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="Style.css">
   </head>
   <body>
-
-    <header>
-      <h1>Citador en apa</h1>
-    </header>
-
-    <div class="Contain0">
-      <a href="../index.html" class="button">Volver</a>
-      <a href="../contador/contador.html" class="button">Contador de palabras</a>
-      <a href="../unidades/unidades.html" class="button">Conversor de unidades</a>
-      <div class="Contain2">
-        <div id="contenedor-apa">
-          <label for="pagina-a-citar">URL:</label>
-          <input type="text" id="pagina-a-citar"/>
-          <a id="citar-apa" class="button_bot">Citar página</a>
-        </div>
-
-        <div id="resultados">
-          <h3>Entrada de lista bibliográfica:</h3>
-          <p id="apa-bibliografia"></p>
-          <h3>Entre paréntesis:</h3>
-          <p id="cita-parentesis"></p>
-        </div>
+    <h1>Citador en apa</h1>
+      <div id="contenedor-apa">
+        <label for="pagina-a-citar">URL:</label>
+        <input type="text" id="pagina-a-citar">
+        <a id="citar-apa" class="button_bot">Citar página</a>
       </div>
+      <div id="resultados">
+        <ul id="apa-bibliografia">Entrada de lista bibliográfica:</ul>
+      </div>
+    <div class="centrado">
+      <a href="../index.html" class="button">Volver</a>
     </div>
   </body>
 </html>

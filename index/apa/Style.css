@@ -11,16 +11,15 @@ h2 { /* Titulos secundarios*/
 }
 
 body {
-  background-color: rgb(0, 6, 44);
+  background-color: rgb(255, 255, 255);
 }
 
 
-ul{ /* Sacarle los puntos del enlistado */
-  list-style-type: none;
+ul {
+  padding-left: 0;
 }
-
-li{ /* espacio entre botones*/
-  padding: 2px;
+li {
+  margin-bottom: 10px; /* Adjust the spacing between list items */
 }
 
 .Contain0{

@@ -308,7 +308,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             result = input1Value * conversion.mult;
         }
-        segundoInput.value = result.toFixed(1);
+        segundoInput.value = result.toFixed(3);
     }
         } 
     }   

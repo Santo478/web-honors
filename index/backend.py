@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-import json
+from scrapAPA import citar
 
 app = FastAPI()
 
@@ -17,7 +17,7 @@ class sugerencia(BaseModel):
     email: str
     sugerencia: str
 
-lista_atributos = list(CV.__annotations__.keys())
+lista_atributos = list(sugerencia.__annotations__.keys())
 
 
 @app.post('/guardar-sugerencia')
@@ -28,5 +28,6 @@ def guardar_sugerencia(sugerencia: sugerencia):
     return sugerencia
 
 @app.get('/citar-apa')
-def CitarApa():
-    pass
+def CitarApa(link: str):
+    html = citar(link)
+    return html
