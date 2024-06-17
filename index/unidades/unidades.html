@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script src="funciones.js"></script>
   <head>
     <meta charset="UTF-8" />
     <title>Conversor</title>
@@ -7,6 +8,31 @@
   </head>
   <body>
     <h1>Conversor de unidades</h1>
+
+    <label for="primerSel">Medida:</label>
+    <select id="primerSel">
+        <option value="">Elegir una opción</option>
+        <option value="Distancia">Distancia</option>
+        <option value="Presion">Presión</option>
+        <option value="Volumen">Volumen</option>
+        <option value="Masa">Masa</option>
+        <option value="Temperatura">Temperatura</option>
+        <option value="Velocidad">Velocidad</option>
+
+    </select>
+
+    <label for="segundoSel">Unidad:</label>
+    <select id="segundoSel">
+        <option value="">Elegir una opción</option>
+    </select>
+    <input type="number" id="primerInput" placeholder="Ingrese el valor" />
+
+    <label for="tercerSel">Conversión:</label>
+    <select id="tercerSel">
+        <option value="">Elegir una opción</option>
+    </select>
+    <input type="number" id="segundoInput" placeholder="Ingrese el valor" disabled />
+
     <a href="../index.html">Volver</a>
   </body>
 </html>
