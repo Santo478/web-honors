@@ -3,23 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <title>Citador en apa</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Style.css" />
   </head>
   <body>
-    <h1>Citador en apa</h1>
-      <div id="contenedor-apa">
-        <label for="pagina-a-citar">URL:</label>
-        <input type="text" id="pagina-a-citar">
-        <button id="citar-apa" class="button">Citar página</button>
-      </div>
-      <div id="resultados">
-        <h3>Entrada de lista bibliográfica:</h3>
-        <p id="apa-bibliografia"></p>
-        <h3>Entre paréntesis:</h3>
-        <p id="cita-parentesis"></p>
-      </div>
-    <div class="centrado">
+
+    <header>
+      <h1>Citador en apa</h1>
+    </header>
+
+    <div class="Contain0">
       <a href="../index.html" class="button">Volver</a>
+      <a href="../contador/contador.html" class="button">Contador de palabras</a>
+      <a href="../unidades/unidades.html" class="button">Conversor de unidades</a>
+      <div class="Contain2">
+        <div id="contenedor-apa">
+          <label for="pagina-a-citar">URL:</label>
+          <input type="text" id="pagina-a-citar"/>
+          <a id="citar-apa" class="button_bot">Citar página</a>
+        </div>
+
+        <div id="resultados">
+          <h3>Entrada de lista bibliográfica:</h3>
+          <p id="apa-bibliografia"></p>
+          <h3>Entre paréntesis:</h3>
+          <p id="cita-parentesis"></p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
