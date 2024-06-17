@@ -1,9 +1,13 @@
 
 h1 { /* Titulos principales */
-  font-size: 30px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(255, 255, 255);
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font: 800 40px Arial ;
+  -webkit-text-fill-color: aquamarine;
+  -webkit-text-stroke: 1px;
+  color: rgb(15, 82, 71)
+}
+
+body{
+  background-color: rgb(0, 6, 44);
 }
 
 h2 { /* Titulos secundarios*/
@@ -17,6 +21,14 @@ h2 { /* Titulos secundarios*/
   background-color: black;
 }
 
+.Contain0{
+  background-color: rgba(102, 237, 249, 0.703);
+   padding: 10px;
+   width: 98%;
+   border-radius: 12px;
+   text-align: center;
+  }
+
 .Contain1{
   background-color: rgb(100, 147, 255);
   display: flex;
@@ -27,7 +39,6 @@ h2 { /* Titulos secundarios*/
  }
 
  .Contain2{
-background-color: rgba(102, 237, 249, 0.703);
  padding: 10px;
  width: 98%;
  border-radius: 12px;

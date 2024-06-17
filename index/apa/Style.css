@@ -1,11 +1,19 @@
 h1 { /* Titulos principales */
-  font-size: 30px;
+  font: 800 40px Arial ;
+  -webkit-text-fill-color: aquamarine;
+  -webkit-text-stroke: 1px;
+  color: rgb(15, 82, 71)
 
 }
 
 h2 { /* Titulos secundarios*/
   font-size: 26px;
 }
+
+body {
+  background-color: rgb(0, 6, 44);
+}
+
 
 ul{ /* Sacarle los puntos del enlistado */
   list-style-type: none;
@@ -15,9 +23,26 @@ li{ /* espacio entre botones*/
   padding: 2px;
 }
 
+.Contain0{
+  background-color: rgba(102, 237, 249, 0.703);
+   padding: 10px;
+   width: 98%;
+   border-radius: 12px;
+   text-align: center;
+  }
+
+
 .Contain1 {
   border-color: black;
   border-style: dashed;
+}
+
+.Contain2 {
+  text-align: center;
+  width: 100%;
+  background-color: rgb(186, 255, 252);
+  border-radius: 12px;
+
 }
 
 .text {
@@ -26,44 +51,62 @@ li{ /* espacio entre botones*/
 }
 
 .button {
-  font: times;
-  font-style: italic;
-  background-color: #0581d4; 
-  border:  none;
-  color: rgb(0, 0, 0);
-  padding: 15px 32px;
+  background-color: #04AA6D;
+  color: white;
+  padding: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
-  opacity: 80%;
+  font-size: 16px;
+  margin: 4px 2px;
   }
 
 a.button:hover{
-  font: times;
-  font-style: italic;
-  background-color: #0331c7; 
-  border:  none;
-  color: white;
-  padding: 15px 32px;
+  background-color: #01613e;
+  border: none;
+  color: rgba(255, 255, 255, 0.833);
+  padding: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 21px;
-  opacity: 80%;
+  font-size: 16px;
+  margin: 4px 2px;
+}
 
+.button_bot {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 8px;
+  }
+
+a.button_bot:hover{
+  background-color: #01613e;
+  border: none;
+  color: rgba(255, 255, 255, 0.833);
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 8px;
 }
 
 #contenedor-apa {
   display: flex;
   justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
-  margin: 100px 0; /* Margin top and bottom */
+  margin: 25px 0; /* Margin top and bottom */
 }
 
 #resultados {
-  margin-top: 20px; /* Space above results section */
+  margin-left: 10px; /* Space above results section */
   text-align: left; /* Align text to the left */
+  padding: 10px;
 }
 
 .centrado {
