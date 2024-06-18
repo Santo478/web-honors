@@ -18,7 +18,7 @@ function citarWeb(){
         const anno = informacion.date ? '(' + informacion.date + ').' : '(s.f.).';
         const titulo = informacion.title;
         const url = informacion.url;
-        const citaCompleta = autores + ' ' + anno + ' ' + titulo + ' ' + url;
+        const citaCompleta = autores + ' ' + anno + ' ' + titulo + '. ' + url;
         
         console.log(citaCompleta);
 

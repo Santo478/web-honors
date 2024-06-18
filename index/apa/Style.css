@@ -291,7 +291,7 @@ a.button_bot:hover{
 .citas {
   text-align: center;
   width: 97%;
-  background-color: var(--main-color);
+  background-color: var(--s1-Col);
   border-radius: 12px;
   margin-right: 100px;
 }
