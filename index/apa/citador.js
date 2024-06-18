@@ -18,13 +18,13 @@ function citarWeb(){
         const anno = informacion.date ? '(' + informacion.date + ').' : '(s.f.).';
         const titulo = informacion.title;
         const url = informacion.url;
-        citaCompleta = autores + ' ' + anno + ' ' + titulo + ' ' + url
+        citaCompleta = autores + ' ' + anno + ' ' + titulo + '. ' + url + '\n'
         console.log(citaCompleta)
-        const listaCitas = document.getElementById('apa-bibliografia');
+        const listaCitas = document.getElementById('resultados');
         const nuevaCita = document.createElement("il");
-        const text = document.createTextNode(citaCompleta);
-        nuevaCita.appendChild(text);
+        nuevaCita.textContent = citaCompleta;
         listaCitas.appendChild(nuevaCita);
+        listaCitas.appendChild(document.createElement("br"));
 
     })
 }

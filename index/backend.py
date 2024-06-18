@@ -9,7 +9,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
     allow_methods=["*"],
-    allow_headers=["*"]
+    allow_headers=["*"],
+    allow_credentials=True,
 )
 
 class sugerencia(BaseModel):
@@ -20,16 +21,14 @@ class sugerencia(BaseModel):
 lista_atributos = list(sugerencia.__annotations__.keys())
 
 @app.post("/pagina-review")
-async def create_cv(cv: sugerencia):
+async def create_cv(wea: sugerencia):
+    rxd = ''
     archivo = open("sugerencias.txt","a",encoding="utf=8")
-    x= ""
-    x+=cv.nombre + ";"
-    x+=cv.email + ";"
-    x+=cv.mensaje
-
-    print(x,file=archivo)
+    xdd = wea.dict()
+    rxd = ','.join(xdd.values())
+    archivo.write(f'{rxd} \n')
     archivo.close()
-    return
+    return rxd
 
 @app.get('/citar-apa')
 def CitarApa(link: str):
