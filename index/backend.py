@@ -19,13 +19,17 @@ class sugerencia(BaseModel):
 
 lista_atributos = list(sugerencia.__annotations__.keys())
 
+@app.post("/pagina-review")
+async def create_cv(cv: sugerencia):
+    archivo = open("sugerencias.txt","a",encoding="utf=8")
+    x= ""
+    x+=cv.nombre + ";"
+    x+=cv.email + ";"
+    x+=cv.mensaje
 
-@app.post('/guardar-sugerencia')
-def guardar_sugerencia(sugerencia: sugerencia):
-    archivo = open('sugerencias.txt', 'a', encoding='utf-8')
-    xdd = sugerencia.dict()
-    archivo.write(f'{";".join(map(str, xdd.values()))}\n')
-    return sugerencia
+    print(x,file=archivo)
+    archivo.close()
+    return
 
 @app.get('/citar-apa')
 def CitarApa(link: str):
