@@ -1,19 +1,172 @@
-h1 { /* Titulos principales */
-  font: 800 40px Arial ;
-  -webkit-text-fill-color: aquamarine;
-  -webkit-text-stroke: 1px;
-  color: rgb(15, 82, 71)
-
+:root {
+  --main-color:#2B74FA;
+  --s1-Col:#ececec;
+  --s2-Col:#9fd3c7; 
+  --s3-Col:#385170; 
+  --s4-Col:#142d4c; 
 }
+
+h1 { /* Titulos principales */
+  font: 800 40px Verdana ;
+  color: var(--main-color);
+}
+
 
 h2 { /* Titulos secundarios*/
   font-size: 26px;
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color:var(--s1-Col);
+  width: 98%;
 }
 
+img {
+max-width: 150px;
+max-height: 100px;
+}
+
+.Titulo {
+  width: 100%;
+  text-align: right;
+  margin-right: 25.5%;
+}
+.dropbtn {
+  background-color: var(--s4-Col);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  margin-top: 13px;
+  width: 15%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--s1-Col);
+  min-width: 170px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-bottom-right-radius: 5px ;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.dropdown-content a {
+  background-color: var(--s4-Col);;
+  color: white;
+  padding: 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 4px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--s3-Col);
+}
+
+.drop {
+  background-color: #04AA6D;
+  color: white;
+  padding: 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 4px;
+  width: 75%;
+  border-radius: 5px;
+  }
+
+a.drop:hover{
+  background-color: var(--s3-Col);
+  border: none;
+  color: rgba(255, 255, 255, 0.833);
+  padding: 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 4px;
+  width: 75%;
+  border-radius: 5px;
+}
+
+.fuente {
+  font: 100 14px  Verdana ;
+}
+
+.fuentebold{
+  font: 800 14px Verdana ;
+  color: var(--s1-Col)
+}
+
+.footer {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+}
+
+.pie1 {
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+}
+
+.pie2 {
+  left: 0;
+  bottom: 0;
+  width: 40%;
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+}
+
+.pie3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+}
+
+.pie3 a {
+  color: inherit;
+  text-decoration: none;
+  
+}
+
+.pie3 a:hover {
+  text-decoration: underline;
+}
 
 ul {
   padding-left: 0;
@@ -31,18 +184,22 @@ li {
   }
 
 
-.Contain1 {
-  border-color: black;
-  border-style: dashed;
-}
+  .Contain1 {
+    text-align: center;
+    width: 100%;
+    background-color: var(--s2-Col);
+    border-radius: 12px;
+    padding: 10px;
+   }
 
 .Contain2 {
   text-align: center;
   width: 100%;
-  background-color: rgb(186, 255, 252);
+  background-color: var(--main-color);
   border-radius: 12px;
-
-}
+  padding: 10px;
+  width: 100%;
+ }
 
 .text {
   align-items: center;
@@ -50,7 +207,7 @@ li {
 }
 
 .button {
-  background-color: #04AA6D;
+  background-color: var(--s4-Col);
   color: white;
   padding: 20px;
   text-align: center;
@@ -58,10 +215,11 @@ li {
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
+  border-radius: 6px;
   }
 
 a.button:hover{
-  background-color: #01613e;
+  background-color: var(--s3-Col);
   border: none;
   color: rgba(255, 255, 255, 0.833);
   padding: 20px;
@@ -70,10 +228,11 @@ a.button:hover{
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
+  border-radius: 6px;
 }
 
 .button_bot {
-  background-color: #04AA6D;
+  background-color: var(--s4-Col);
   color: white;
   padding: 10px;
   text-align: center;
@@ -84,7 +243,7 @@ a.button:hover{
   }
 
 a.button_bot:hover{
-  background-color: #01613e;
+  background-color: var(--s3-Col);
   border: none;
   color: rgba(255, 255, 255, 0.833);
   padding: 10px;
@@ -115,6 +274,7 @@ a.button_bot:hover{
 
 #contenedor-apa label {
   margin-right: 10px; /* Space between label and input */
+  
 }
 
 #resultados h3 {
@@ -123,4 +283,23 @@ a.button_bot:hover{
 
 #resultados p {
   margin-bottom: 5px; /* Space between paragraphs */
+}
+.Container0{
+  display: flex;
+  width: 100%;
+  }
+.citas {
+  text-align: center;
+  width: 97%;
+  background-color: var(--s1-Col);
+  border-radius: 12px;
+  margin-right: 100px;
+}
+
+ul{ /* Sacarle los puntos del enlistado */
+  list-style-type: none;
+}
+
+li{ /* espacio entre botones*/
+  padding: 2px;
 }
